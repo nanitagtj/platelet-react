@@ -1,0 +1,113 @@
+.UserComponentCreateModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .UserComponentCreateModal .UserComponentCreate {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  }
+  
+  .UserComponentCreateModal .UserComponentCreate h2 {
+    color: #477E94;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+  }
+  
+  .UserComponentCreateModal .UserComponentCreate .NameContainer {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+  
+  .UserComponentCreateModal .UserComponentCreate input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #477E94;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .UserComponentCreateModal .UserComponentCreate .ButtonContainer {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .UserComponentCreateModal .UserComponentCreate .CancelButton {
+    background-color: #CCCCCC;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .UserComponentCreateModal .UserComponentCreate .CreateButton {
+    background-color: #477E94;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .Modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ModalContent {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  
+  .ModalContent h3 {
+    color: #477E94;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0;
+  }
+  
+  .ModalContent p {
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .ModalContent button {
+    background-color: #477E94;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

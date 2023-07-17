@@ -1,0 +1,92 @@
+.UserComponentLoginModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .UserComponentLoginContent {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .UserComponentLoginTitle {
+    color: #477E94;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .UserComponentLoginForm {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 0 auto; 
+  }
+  
+  .UserComponentLoginField {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 30px;
+  }
+  
+  .UserComponentLoginField label {
+    color: #6F6F6F;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  
+  .UserComponentLoginField input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #477E94;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #6F6F6F;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) inset;
+  }
+  
+  .UserComponentLoginField input::placeholder {
+    color: #6F6F6F;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .UserComponentLoginField input[type="email"]::placeholder {
+    content: "Correo Electrónico";
+  }
+  
+  .UserComponentLoginField input[type="password"]::placeholder {
+    content: "Contraseña";
+  }
+  
+  
+  .UserComponentLoginButton {
+    background-color: #477E94;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .UserComponentLogoutButton {
+    background-color: #477E94;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

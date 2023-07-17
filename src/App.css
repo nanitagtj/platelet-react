@@ -1,38 +1,115 @@
 .App {
+  position: relative;
   text-align: center;
+  width: 100%;
+  min-height: 100vh; /* Establece la altura mínima del landing */
+  padding: 50px; /* Ajusta el espaciado interno del landing según tus necesidades */
+  margin: 0 auto; /* Centra el landing horizontalmente */
+  overflow: auto; /* Agrega scroll si el contenido excede la altura del landing */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(21, 21, 21, 0.6) 100%), url("../src/assets/fondo.png"), rgb(184, 182, 182) 20% / cover no-repeat;
+  filter: blur(1.0px);
+  z-index: -1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ContentContainer {
+  width: 1440px;
+  height: 1300px;
+  padding: 0;
+  flex-shrink: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.SocialMediaContainer {
+  display: flex;
+  width: 100%;
+  height: 232px;
+  padding: 37px 140px 0px 140px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+  flex-shrink: 0;
+  background-color: #000;
+  color: #fff;
+  /* Estilos adicionales para el footer de redes sociales */
+}
+
+.RestauranteIcono {
+  width: 73px;
+  height: 73px;
+  margin-right: 10px;
+}
+
+.ContainerHeader {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+}
+
+.TitleContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.Nanita {
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 0;
+  vertical-align: top;
+}
+
+.Plaza {
+  color: #FFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  vertical-align: bottom;
+  margin-top: 0;
+}
+
+.ButtonsContainer {
+  position: absolute;
+  top: 50px;
+  right: 100px;
+  display: flex;
+}
+
+.Button {
+  display: flex;
+  width: 111px;
+  height: 42px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  font-family: 'Inter';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+  transition: background-color 0.8s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Button.ActiveButton {
+  background-color: #453b46;
+  color: #FFFFFF;
 }
